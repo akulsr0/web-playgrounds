@@ -1,4 +1,8 @@
 const EditorStyles = {
+  wrapper: {
+    width: "100%",
+    height: "100%",
+  },
   tabs: {
     height: "100%",
   },

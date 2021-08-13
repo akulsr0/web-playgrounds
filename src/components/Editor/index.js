@@ -9,23 +9,25 @@ import JSEditor from "./JSEditor";
 
 const Editor = () => {
   return (
-    <Tabs style={Styles.tabs}>
-      <TabList style={Styles.tablist}>
-        <Tab style={Styles.tab}>HTML</Tab>
-        <Tab style={Styles.tab}>CSS</Tab>
-        <Tab style={Styles.tab}>Javascript</Tab>
-      </TabList>
+    <div style={Styles.wrapper}>
+      <Tabs style={Styles.tabs}>
+        <TabList style={Styles.tablist}>
+          <Tab style={Styles.tab}>HTML</Tab>
+          <Tab style={Styles.tab}>CSS</Tab>
+          <Tab style={Styles.tab}>Javascript</Tab>
+        </TabList>
 
-      <TabPanel style={Styles.tabPanel}>
-        <HTMLEditor />
-      </TabPanel>
-      <TabPanel style={Styles.tabPanel}>
-        <CSSEditor />
-      </TabPanel>
-      <TabPanel style={Styles.tabPanel}>
-        <JSEditor />
-      </TabPanel>
-    </Tabs>
+        <TabPanel style={Styles.tabPanel}>
+          <HTMLEditor />
+        </TabPanel>
+        <TabPanel style={Styles.tabPanel}>
+          <CSSEditor />
+        </TabPanel>
+        <TabPanel style={Styles.tabPanel}>
+          <JSEditor />
+        </TabPanel>
+      </Tabs>
+    </div>
   );
 };
 
