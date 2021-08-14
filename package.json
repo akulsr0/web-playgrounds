@@ -4,11 +4,15 @@
   "private": true,
   "main": "public/main.js",
   "homepage": "./",
+  "author": {
+    "name": "Akul Srivastava",
+    "email": "akulsr0@gmail.com"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "dev": "concurrently \"BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\"",
-    "package:mac": "npm run build && electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds"
+    "package:mac": "npm run build && electron-packager . --overwrite --platform=darwin --arch=x64 --icon=public/assets/logo.icns --prune=true --out=release-builds"
   },
   "eslintConfig": {
     "extends": [
